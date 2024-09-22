@@ -1,0 +1,193 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(220, 255, 220); 
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.p-text {
+    color: rgb(30, 30, 30); 
+    font-size: 34px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mt {
+    margin-top: 3em;
+}
+
+.mr {
+    margin-right: 3em;
+}
+
+.mr-2 {
+    margin-right: 6em;
+}
+
+.ml {
+    margin-left: 3em;
+}
+
+.mb {
+    margin-bottom: 3em;
+}
+
+.btn-dark {
+    background-color: rgb(255, 150, 0); 
+    border: 5px solid black;
+    border-radius: 50px;
+    display: inline-block;
+    color: rgb(30, 30, 30); 
+    font-size: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.btn-dark:hover {
+    cursor: pointer;
+}
+
+.circle-border {
+    border: 5px solid rgb(55, 32, 22);
+    border-radius: 50%;
+}
+
+.border-20px {
+    border: 5px solid rgb(55, 32, 22);
+    border-radius: 20px;
+}
+
+.border-50px {
+    border-radius: 50px;
+}
+
+.text {
+    color: rgb(55, 32, 22);
+    font-size: 24px;
+    margin: 0;
+}
+.red {
+    color: red;
+}
+.my {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.mText-light {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    color: rgb(149, 121, 106);
+    font-size: 60px;
+}
+
+.mText {
+    color: rgb(55, 32, 22);
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-item {
+    flex-grow: 1;
+}
+
+.big-text {
+    color: rgb(55, 32, 22);
+    font-size: 120px;
+}
+
+.justify-content-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    padding: 0 15px;
+}
+
+.slideToRight {
+    animation-name: slideToRight;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+.slideToLeft {
+    animation-name: slideToLeft;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+.dropimg {
+    animation-name: dropDown;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes slideToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideToLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+@keyframes dropDown {
+    from {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
